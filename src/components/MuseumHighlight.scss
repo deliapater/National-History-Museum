@@ -1,0 +1,90 @@
+.museum-highlight {
+  border: solid 1px rgb(219, 219, 219);
+  width: 360px;
+  position: relative;
+  flex: 0 0 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 5px 5px rgba(0, 0, 0, 0.1);
+
+  &__highlight-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    min-width: 40px;
+    min-height: 40px;
+    background: #ff9800;
+    border-radius: 0 0 0 10px;
+    font-size: 2em;
+  }
+
+  &__highlight-image {
+    width: 360px;
+    height: 320px;
+  }
+
+  &__highlight-content {
+    padding: 1.5rem;
+
+    & h2 {
+      font-size: 2rem;
+      margin: 0 0 1.5rem 0;
+      color: #1a1a1a;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    & p {
+      font-size: 1.4rem;
+
+      & em {
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+    }
+
+    & a.additional-link {
+      padding: 2rem 0;
+      color: #1a1a1a;
+      text-transform: capitalize;
+    }
+  }
+  &__news-summary {
+    & h3 {
+      margin: 0;
+    }
+    & p {
+      padding: 0;
+      margin: 0;
+  
+      &.date {
+        font-style: italic;
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+  }
+  
+  &.space {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(48, 33, 145, 0.2) 50%,
+      rgba(9, 15, 121, 0.2) 80%,
+      rgba(35, 136, 237, 0.2) 100%
+    );
+  }
+  
+  &.partner {
+    background: rgb(255, 7, 7);
+    background: linear-gradient(
+      0deg,
+      rgba(221, 106, 64, 0.2) 30%,
+      rgba(223, 143, 77, 0.2) 50%
+    );
+  }
+  
+}
